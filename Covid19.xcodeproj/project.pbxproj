@@ -14,6 +14,7 @@
 		A7549630242DD2F400F4567D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754962F242DD2F400F4567D /* Preview Assets.xcassets */; };
 		A7549633242DD2F400F4567D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7549631242DD2F400F4567D /* LaunchScreen.storyboard */; };
 		A754963E242DD2F400F4567D /* Covid19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754963D242DD2F400F4567D /* Covid19Tests.swift */; };
+		A754964C242E775900F4567D /* CovidCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754964B242E775900F4567D /* CovidCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A7549639242DD2F400F4567D /* Covid19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Covid19Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754963D242DD2F400F4567D /* Covid19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19Tests.swift; sourceTree = "<group>"; };
 		A754963F242DD2F400F4567D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A754964B242E775900F4567D /* CovidCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A7549625242DD2F000F4567D /* Covid19 */ = {
 			isa = PBXGroup;
 			children = (
+				A7549648242E770D00F4567D /* Models */,
 				A7549626242DD2F000F4567D /* AppDelegate.swift */,
 				A7549628242DD2F000F4567D /* SceneDelegate.swift */,
 				A754962A242DD2F000F4567D /* ContentView.swift */,
@@ -105,6 +108,14 @@
 				A754963F242DD2F400F4567D /* Info.plist */,
 			);
 			path = Covid19Tests;
+			sourceTree = "<group>";
+		};
+		A7549648242E770D00F4567D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A754964B242E775900F4567D /* CovidCount.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7549627242DD2F000F4567D /* AppDelegate.swift in Sources */,
+				A754964C242E775900F4567D /* CovidCount.swift in Sources */,
 				A7549629242DD2F000F4567D /* SceneDelegate.swift in Sources */,
 				A754962B242DD2F000F4567D /* ContentView.swift in Sources */,
 			);

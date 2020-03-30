@@ -8,10 +8,7 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
-    //@State var covidArray: CovidCount
     
     @State var covidArray: [CovidCount] = getResults()
     
@@ -23,157 +20,250 @@ struct ContentView: View {
                         .font(.title)
                         .foregroundColor(.green)
                     Spacer()
-                    Button(action: {
-                        self.covidArray = getResults()
-                    }) {
-                    Text("Refresh")
-                        .font(.title)
-                        .foregroundColor(.green)
-                        
-                    }
+                        Button(action: {
+                            self.covidArray = getResults()
+                            
+                        }) {
+                        //                    Text("Refresh")
+                        //                        .font(.title)
+                        //                        .foregroundColor(.green)
+                             Image("circular")
+                                  .padding()
+                        }
+                    
                 }
                 Divider()
                 HStack {
-                    Text("#evdekal")
+                    Text("#stayhome")
                         .font(.subheadline)
                         .fontWeight(.heavy)
                 }
             }
             .padding()
+            Spacer()
+            HStack {
+                Text("Last Updated: ")
+                Text("\(convertToPretty(rawDate: covidArray[0].lastupdate))")
+            }
+            HStack {
+                Text("Confirmed") .foregroundColor(.orange)
+                Text("Deaths") .foregroundColor(.red)
+                Text("Recovered") .foregroundColor(.green)
+            }
             
-            VStack(alignment: .leading, spacing: 0) {
-                HStack() {
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        
-                        Text("Turkey")
-                                .font(.title)
-                            .foregroundColor(.blue)
-                        
-                        .padding()
-                        VStack(alignment: .leading) {
-                            Text("Confirmed: \(covidArray[0].confirmed)")
-                            Text("Deaths: \(covidArray[0].deaths)")
-                            Text("Recovered: \(covidArray[0].recovered)")
-                            Text("Last Update: \(covidArray[0].lastupdate)")
+            ScrollView{
+                VStack(alignment: .leading, spacing: 0) {
+                    HStack() {
+                        Spacer()
+                        VStack() {
+                            
+                            //Text("Turkey").font(.title).foregroundColor(.blue)
+                            Image("turkey")
+                                .resizable().frame(width: 30.0, height: 30.0)
+                            
+                            .padding()
+                            VStack(alignment: .center) {
+                                Text("\(covidArray[0].confirmed)").foregroundColor(.orange)
+                                Text("\(covidArray[0].deaths)").foregroundColor(.red)
+                                Text("\(covidArray[0].recovered)").foregroundColor(.green)
+//                                Text("\(convertToPretty(rawDate: covidArray[0].lastupdate))")
+                            }
+                            .padding()
+                            
                         }
-                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        
+                        Spacer()
+                        Spacer()
+                        VStack() {
+                            //Text("Italy").font(.title).foregroundColor(.blue)
+                            Image("italy")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                            .padding()
+                            VStack(alignment: .center) {
+                                Text("\(covidArray[1].confirmed)").foregroundColor(.orange)
+                                Text("\(covidArray[1].deaths)").foregroundColor(.red)
+                                Text("\(covidArray[1].recovered)").foregroundColor(.green)
+//                                Text("\(convertToPretty(rawDate: covidArray[1].lastupdate))")
+                            }
+                            .padding()
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        
+                        Spacer()
+                    }
+                    .padding()
+                    Spacer()
+                    HStack() {
+                        Spacer()
+                        VStack() {
+                            //Text("USA").font(.title).foregroundColor(.blue)
+                            Image("united-states")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                            .padding()
+                            VStack(alignment: .center) {
+                                Text("\(covidArray[2].confirmed)").foregroundColor(.orange)
+                                Text("\(covidArray[2].deaths)").foregroundColor(.red)
+                                Text("\(covidArray[2].recovered)").foregroundColor(.green)
+//                                Text("\(convertToPretty(rawDate: covidArray[2].lastupdate))")
+                            }
+                            .padding()
+                        }
+                            .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        Spacer()
+                        Spacer()
+                        VStack() {
+                            //Text("UK").font(.title).foregroundColor(.blue)
+                            Image("united-kingdom")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                            .padding()
+                            VStack(alignment: .center) {
+                                Text("\(covidArray[3].confirmed)").foregroundColor(.orange)
+                                Text("\(covidArray[3].deaths)").foregroundColor(.red)
+                                Text("\(covidArray[3].recovered)").foregroundColor(.green)
+//                                Text("\(convertToPretty(rawDate: covidArray[3].lastupdate))")
+                            }
+                            .padding()
+                        }
+                            .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        Spacer()
                         
                     }
+                    .padding()
                     Spacer()
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        Text("Italy")
-                                .font(.title)
-                            .foregroundColor(.blue)
-                        
-                        .padding()
-                        VStack(alignment: .leading) {
-                            Text("Confirmed: \(covidArray[1].confirmed)")
-                            Text("Deaths: \(covidArray[1].deaths)")
-                            Text("Recovered: \(covidArray[1].recovered)")
-                            Text("Last Update: \(covidArray[1].lastupdate)")
+                    
+                    HStack() {
+                        Spacer()
+                        VStack() {
+                            //Text("Spain").font(.title).foregroundColor(.blue)
+                            Image("spain")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                            .padding()
+                            VStack(alignment: .center) {
+                                Text("\(covidArray[4].confirmed)").foregroundColor(.orange)
+                                Text("\(covidArray[4].deaths)").foregroundColor(.red)
+                                Text("\(covidArray[4].recovered)").foregroundColor(.green)
+//                                Text("\(convertToPretty(rawDate: covidArray[4].lastupdate))")
+                            }
+                            .padding()
                         }
-                        .padding()
-                        
-                    }
-                    Spacer()
-                }
-                .padding()
-                Spacer()
-                HStack() {
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        Text("USA")
-                                .font(.title)
-                            .foregroundColor(.blue)
-                        
-                        .padding()
-                        VStack(alignment: .leading) {
-                            Text("Confirmed: \(covidArray[2].confirmed)")
-                            Text("Deaths: \(covidArray[2].deaths)")
-                            Text("Recovered: \(covidArray[2].recovered)")
-                            Text("Last Update: \(covidArray[2].lastupdate)")
+                            .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        Spacer()
+                        Spacer()
+                        VStack() {
+                            //Text("China").font(.title).foregroundColor(.blue)
+                            Image("china")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                            .padding()
+                            VStack(alignment: .center) {
+                                Text("\(covidArray[5].confirmed)").foregroundColor(.orange)
+                                Text("\(covidArray[5].deaths)").foregroundColor(.red)
+                                Text("\(covidArray[5].recovered)").foregroundColor(.green)
+//                                Text("\(convertToPretty(rawDate: covidArray[5].lastupdate))")
+                                
+                            }
+                            .padding()
                         }
-                        .padding()
+                            .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        Spacer()
                     }
+                    .padding()
                     Spacer()
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        Text("UK")
-                                .font(.title)
-                            .foregroundColor(.blue)
-                        
-                        .padding()
-                        VStack(alignment: .leading) {
-                            Text("Confirmed: \(covidArray[3].confirmed)")
-                            Text("Deaths: \(covidArray[3].deaths)")
-                            Text("Recovered: \(covidArray[3].recovered)")
-                            Text("Last Update: \(covidArray[3].lastupdate)")
+                    
+                    HStack() {
+                        Spacer()
+                        VStack() {
+                            //Text("Germany").font(.title).foregroundColor(.blue)
+                            Image("germany")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                                .padding()
+                                VStack(alignment: .center) {
+                                    Text("\(covidArray[6].confirmed)").foregroundColor(.orange)
+                                    Text("\(covidArray[6].deaths)").foregroundColor(.red)
+                                    Text("\(covidArray[6].recovered)").foregroundColor(.green)
+                    //              Text("\(convertToPretty(rawDate: covidArray[4].lastupdate))")
+                                }
+                                .padding()
                         }
-                        .padding()
+                            .frame(maxWidth: .infinity)
+                            .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                            .shadow(radius: 10)
+                        Spacer()
+                        Spacer()
+                        VStack() {
+                                //Text("France").font(.title).foregroundColor(.blue)
+                            Image("france")
+                            .resizable().frame(width: 30.0, height: 30.0)
+                                    .padding()
+                                VStack(alignment: .center) {
+                                    Text("\(covidArray[7].confirmed)").foregroundColor(.orange)
+                                    Text("\(covidArray[7].deaths)").foregroundColor(.red)
+                                    Text("\(covidArray[7].recovered)").foregroundColor(.green)
+                    //              Text("\(convertToPretty(rawDate: covidArray[5].lastupdate))")
+                                                    
+                                }
+                                    .padding()
+                        }
+                        .frame(maxWidth: .infinity)
+                        .overlay(Rectangle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        Spacer()
                     }
+                    .padding()
                     Spacer()
                     
                 }
                 .padding()
-                Spacer()
                 
-                HStack() {
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        Text("Spain")
-                                .font(.title)
-                            .foregroundColor(.blue)
-                        
-                        .padding()
-                        VStack(alignment: .leading) {
-                            Text("Confirmed: \(covidArray[4].confirmed)")
-                            Text("Deaths: \(covidArray[4].deaths)")
-                            Text("Recovered: \(covidArray[4].recovered)")
-                            Text("Last Update: \(covidArray[4].lastupdate)")
-                        }
-                        .padding()
-                    }
-                    Spacer()
-                    Spacer()
-                    VStack(alignment: .leading) {
-                        Text("China")
-                                .font(.title)
-                            .foregroundColor(.blue)
-                        
-                        .padding()
-                        VStack(alignment: .leading) {
-                            Text("Confirmed: \(covidArray[5].confirmed)")
-                            Text("Deaths: \(covidArray[5].deaths)")
-                            Text("Recovered: \(covidArray[5].recovered)")
-                            Text("Last Update: \(covidArray[5].lastupdate)")
-                            
-                        }
-                        .padding()
-                    }
-                    Spacer()
-                }
-                .padding()
                 Spacer()
-                
             }
-            .padding()
             
-            Spacer()
             
             
         }
     }
 }
 
-
+func convertToPretty(rawDate: String) -> String
+{
+    print(rawDate)
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sssZ"
+    //dateFormatter.timeZone = TimeZone.current
+    dateFormatter.locale = Locale(identifier: "en_GB")
+    let date = dateFormatter.date(from: rawDate)
+    
+    dateFormatter.dateFormat = "LLL"
+    let month = dateFormatter.string(from: date!)
+    dateFormatter.dateFormat = "dd"
+    let day = dateFormatter.string(from: date!)
+    dateFormatter.dateFormat = "HH"
+    let hour = dateFormatter.string(from: date!)
+    dateFormatter.dateFormat = "mm"
+    let minute = dateFormatter.string(from: date!)
+    
+    return day + " " + month + " - " + hour + ":" + minute
+}
 
 func getResults() -> [CovidCount]
 {
-    print("Hello MF")
-    let countries: [String] = ["TR", "IT", "US", "GB", "ES", "CN"]
+    print("Starting...")
+    let countries: [String] = ["TR", "IT", "US", "GB", "ES", "CN", "DE", "FR"]
     var tempArr: [CovidCount]  = []
+    let semaphore = DispatchSemaphore(value: 0)
     
     for code in countries {
         var temp: CovidCount = CovidCount.init(confirmed: 5, deaths: 0, recovered: 0, lastupdate: "", countryregion: "")
@@ -199,30 +289,22 @@ func getResults() -> [CovidCount]
             if let data = data, let _ = String(data: data, encoding: .utf8){
                 do {
                     let f = try JSONDecoder().decode([CovidCount].self, from: data)
-                    print(f)
-                    print(f[0])
                     temp = f[0]
                 } catch {
                     print(error)
                 }
-                //print("Response data string:\n \(dataString)")
             }
-            
+            semaphore.signal()
         }
+        
         task.resume()
-        while temp.confirmed == 5 {
-        }
+        semaphore.wait()
+        
         print("finished")
         print(temp.countryregion)
         tempArr.append(temp)
     }
     return tempArr
-}
-
-
-func initArray() -> Void
-{
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -231,18 +313,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//class CovidCount: Codable {
-//    var confirmed: Int;
-//    var deaths: Int;
-//    var recovered: Int;
-//    var lastupdate: String;
-//    var countryregion: String
-//
-//    init(confirmed: Int, deaths: Int, recovered: Int, lastupdate: String, countryregion: String) {
-//        self.confirmed = confirmed
-//        self.deaths = deaths
-//        self.recovered = recovered
-//        self.lastupdate = lastupdate
-//        self.countryregion = countryregion
-//    }
-//}
+

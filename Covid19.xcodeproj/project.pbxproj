@@ -15,6 +15,17 @@
 		A7549633242DD2F400F4567D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7549631242DD2F400F4567D /* LaunchScreen.storyboard */; };
 		A754963E242DD2F400F4567D /* Covid19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754963D242DD2F400F4567D /* Covid19Tests.swift */; };
 		A754964C242E775900F4567D /* CovidCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754964B242E775900F4567D /* CovidCount.swift */; };
+		A754966E242FA7A000F4567D /* united-states.png in Resources */ = {isa = PBXBuildFile; fileRef = A7549664242FA7A000F4567D /* united-states.png */; };
+		A754966F242FA7A000F4567D /* france.png in Resources */ = {isa = PBXBuildFile; fileRef = A7549665242FA7A000F4567D /* france.png */; };
+		A7549670242FA7A000F4567D /* turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = A7549666242FA7A000F4567D /* turkey.png */; };
+		A7549671242FA7A000F4567D /* china.png in Resources */ = {isa = PBXBuildFile; fileRef = A7549667242FA7A000F4567D /* china.png */; };
+		A7549672242FA7A000F4567D /* italy.png in Resources */ = {isa = PBXBuildFile; fileRef = A7549668242FA7A000F4567D /* italy.png */; };
+		A7549673242FA7A000F4567D /* coronavirus.png in Resources */ = {isa = PBXBuildFile; fileRef = A7549669242FA7A000F4567D /* coronavirus.png */; };
+		A7549674242FA7A000F4567D /* spain.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966A242FA7A000F4567D /* spain.png */; };
+		A7549675242FA7A000F4567D /* united-kingdom.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966B242FA7A000F4567D /* united-kingdom.png */; };
+		A7549676242FA7A000F4567D /* germany.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966C242FA7A000F4567D /* germany.png */; };
+		A7549677242FA7A000F4567D /* circular.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966D242FA7A000F4567D /* circular.png */; };
+		A7549679242FB10600F4567D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7549678242FB10600F4567D /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,17 @@
 		A754963D242DD2F400F4567D /* Covid19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19Tests.swift; sourceTree = "<group>"; };
 		A754963F242DD2F400F4567D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A754964B242E775900F4567D /* CovidCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCount.swift; sourceTree = "<group>"; };
+		A7549664242FA7A000F4567D /* united-states.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "united-states.png"; path = "../../../../Desktop/icons/united-states.png"; sourceTree = "<group>"; };
+		A7549665242FA7A000F4567D /* france.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = france.png; path = ../../../../Desktop/icons/france.png; sourceTree = "<group>"; };
+		A7549666242FA7A000F4567D /* turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turkey.png; path = ../../../../Desktop/icons/turkey.png; sourceTree = "<group>"; };
+		A7549667242FA7A000F4567D /* china.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = china.png; path = ../../../../Desktop/icons/china.png; sourceTree = "<group>"; };
+		A7549668242FA7A000F4567D /* italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = italy.png; path = ../../../../Desktop/icons/italy.png; sourceTree = "<group>"; };
+		A7549669242FA7A000F4567D /* coronavirus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coronavirus.png; path = ../../../../Desktop/icons/coronavirus.png; sourceTree = "<group>"; };
+		A754966A242FA7A000F4567D /* spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spain.png; path = ../../../../Desktop/icons/spain.png; sourceTree = "<group>"; };
+		A754966B242FA7A000F4567D /* united-kingdom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "united-kingdom.png"; path = "../../../../Desktop/icons/united-kingdom.png"; sourceTree = "<group>"; };
+		A754966C242FA7A000F4567D /* germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = germany.png; path = ../../../../Desktop/icons/germany.png; sourceTree = "<group>"; };
+		A754966D242FA7A000F4567D /* circular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circular.png; path = ../../../../Desktop/icons/circular.png; sourceTree = "<group>"; };
+		A7549678242FB10600F4567D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +103,12 @@
 		A7549625242DD2F000F4567D /* Covid19 */ = {
 			isa = PBXGroup;
 			children = (
+				A754964D242F67A500F4567D /* Resources */,
 				A7549648242E770D00F4567D /* Models */,
 				A7549626242DD2F000F4567D /* AppDelegate.swift */,
 				A7549628242DD2F000F4567D /* SceneDelegate.swift */,
 				A754962A242DD2F000F4567D /* ContentView.swift */,
+				A7549678242FB10600F4567D /* ActivityIndicator.swift */,
 				A754962C242DD2F400F4567D /* Assets.xcassets */,
 				A7549631242DD2F400F4567D /* LaunchScreen.storyboard */,
 				A7549634242DD2F400F4567D /* Info.plist */,
@@ -116,6 +140,23 @@
 				A754964B242E775900F4567D /* CovidCount.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A754964D242F67A500F4567D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7549667242FA7A000F4567D /* china.png */,
+				A754966D242FA7A000F4567D /* circular.png */,
+				A7549669242FA7A000F4567D /* coronavirus.png */,
+				A7549665242FA7A000F4567D /* france.png */,
+				A754966C242FA7A000F4567D /* germany.png */,
+				A7549668242FA7A000F4567D /* italy.png */,
+				A754966A242FA7A000F4567D /* spain.png */,
+				A7549666242FA7A000F4567D /* turkey.png */,
+				A754966B242FA7A000F4567D /* united-kingdom.png */,
+				A7549664242FA7A000F4567D /* united-states.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +240,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7549671242FA7A000F4567D /* china.png in Resources */,
+				A7549673242FA7A000F4567D /* coronavirus.png in Resources */,
+				A754966F242FA7A000F4567D /* france.png in Resources */,
 				A7549633242DD2F400F4567D /* LaunchScreen.storyboard in Resources */,
 				A7549630242DD2F400F4567D /* Preview Assets.xcassets in Resources */,
+				A754966E242FA7A000F4567D /* united-states.png in Resources */,
 				A754962D242DD2F400F4567D /* Assets.xcassets in Resources */,
+				A7549670242FA7A000F4567D /* turkey.png in Resources */,
+				A7549672242FA7A000F4567D /* italy.png in Resources */,
+				A7549676242FA7A000F4567D /* germany.png in Resources */,
+				A7549677242FA7A000F4567D /* circular.png in Resources */,
+				A7549675242FA7A000F4567D /* united-kingdom.png in Resources */,
+				A7549674242FA7A000F4567D /* spain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7549627242DD2F000F4567D /* AppDelegate.swift in Sources */,
+				A7549679242FB10600F4567D /* ActivityIndicator.swift in Sources */,
 				A754964C242E775900F4567D /* CovidCount.swift in Sources */,
 				A7549629242DD2F000F4567D /* SceneDelegate.swift in Sources */,
 				A754962B242DD2F000F4567D /* ContentView.swift in Sources */,
@@ -376,14 +428,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Covid19/Preview Content\"";
-				DEVELOPMENT_TEAM = HBPJUZL567;
+				DEVELOPMENT_TEAM = CD723HT6S4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Covid19/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.humutkazan.Covid19;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humutkazan.Covid19Uniq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,14 +448,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Covid19/Preview Content\"";
-				DEVELOPMENT_TEAM = HBPJUZL567;
+				DEVELOPMENT_TEAM = CD723HT6S4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Covid19/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.humutkazan.Covid19;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humutkazan.Covid19Uniq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

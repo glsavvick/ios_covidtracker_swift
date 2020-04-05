@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A7549627242DD2F000F4567D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7549626242DD2F000F4567D /* AppDelegate.swift */; };
 		A7549629242DD2F000F4567D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7549628242DD2F000F4567D /* SceneDelegate.swift */; };
-		A754962B242DD2F000F4567D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754962A242DD2F000F4567D /* ContentView.swift */; };
 		A754962D242DD2F400F4567D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754962C242DD2F400F4567D /* Assets.xcassets */; };
 		A7549630242DD2F400F4567D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754962F242DD2F400F4567D /* Preview Assets.xcassets */; };
 		A7549633242DD2F400F4567D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7549631242DD2F400F4567D /* LaunchScreen.storyboard */; };
@@ -25,7 +24,12 @@
 		A7549675242FA7A000F4567D /* united-kingdom.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966B242FA7A000F4567D /* united-kingdom.png */; };
 		A7549676242FA7A000F4567D /* germany.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966C242FA7A000F4567D /* germany.png */; };
 		A7549677242FA7A000F4567D /* circular.png in Resources */ = {isa = PBXBuildFile; fileRef = A754966D242FA7A000F4567D /* circular.png */; };
-		A7549679242FB10600F4567D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7549678242FB10600F4567D /* ActivityIndicator.swift */; };
+		A77977C12435CD9E001E5486 /* CountryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77977C02435CD9E001E5486 /* CountryRow.swift */; };
+		A77977C32435D400001E5486 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77977C22435D400001E5486 /* CountryList.swift */; };
+		A77977C5243612B0001E5486 /* LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77977C4243612B0001E5486 /* LoadData.swift */; };
+		A7FF43CA2437141A00A5D7DC /* DetailedCovid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF43C92437141A00A5D7DC /* DetailedCovid.swift */; };
+		A7FF43CC24371CF400A5D7DC /* DetailedCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF43CB24371CF400A5D7DC /* DetailedCountry.swift */; };
+		A7FF43CE24372B3900A5D7DC /* TimeSeriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FF43CD24372B3900A5D7DC /* TimeSeriesRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,6 @@
 		A7549623242DD2F000F4567D /* Covid19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7549626242DD2F000F4567D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7549628242DD2F000F4567D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A754962A242DD2F000F4567D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A754962C242DD2F400F4567D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A754962F242DD2F400F4567D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7549632242DD2F400F4567D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +64,12 @@
 		A754966B242FA7A000F4567D /* united-kingdom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "united-kingdom.png"; path = "../../../../Desktop/icons/united-kingdom.png"; sourceTree = "<group>"; };
 		A754966C242FA7A000F4567D /* germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = germany.png; path = ../../../../Desktop/icons/germany.png; sourceTree = "<group>"; };
 		A754966D242FA7A000F4567D /* circular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circular.png; path = ../../../../Desktop/icons/circular.png; sourceTree = "<group>"; };
-		A7549678242FB10600F4567D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		A77977C02435CD9E001E5486 /* CountryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRow.swift; sourceTree = "<group>"; };
+		A77977C22435D400001E5486 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
+		A77977C4243612B0001E5486 /* LoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadData.swift; sourceTree = "<group>"; };
+		A7FF43C92437141A00A5D7DC /* DetailedCovid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCovid.swift; sourceTree = "<group>"; };
+		A7FF43CB24371CF400A5D7DC /* DetailedCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCountry.swift; sourceTree = "<group>"; };
+		A7FF43CD24372B3900A5D7DC /* TimeSeriesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,10 @@
 				A7549648242E770D00F4567D /* Models */,
 				A7549626242DD2F000F4567D /* AppDelegate.swift */,
 				A7549628242DD2F000F4567D /* SceneDelegate.swift */,
-				A754962A242DD2F000F4567D /* ContentView.swift */,
-				A7549678242FB10600F4567D /* ActivityIndicator.swift */,
+				A77977C22435D400001E5486 /* CountryList.swift */,
+				A77977C02435CD9E001E5486 /* CountryRow.swift */,
+				A7FF43CB24371CF400A5D7DC /* DetailedCountry.swift */,
+				A7FF43CD24372B3900A5D7DC /* TimeSeriesRow.swift */,
 				A754962C242DD2F400F4567D /* Assets.xcassets */,
 				A7549631242DD2F400F4567D /* LaunchScreen.storyboard */,
 				A7549634242DD2F400F4567D /* Info.plist */,
@@ -138,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				A754964B242E775900F4567D /* CovidCount.swift */,
+				A77977C4243612B0001E5486 /* LoadData.swift */,
+				A7FF43C92437141A00A5D7DC /* DetailedCovid.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,11 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FF43CE24372B3900A5D7DC /* TimeSeriesRow.swift in Sources */,
 				A7549627242DD2F000F4567D /* AppDelegate.swift in Sources */,
-				A7549679242FB10600F4567D /* ActivityIndicator.swift in Sources */,
+				A77977C5243612B0001E5486 /* LoadData.swift in Sources */,
+				A7FF43CC24371CF400A5D7DC /* DetailedCountry.swift in Sources */,
 				A754964C242E775900F4567D /* CovidCount.swift in Sources */,
+				A77977C32435D400001E5486 /* CountryList.swift in Sources */,
+				A77977C12435CD9E001E5486 /* CountryRow.swift in Sources */,
 				A7549629242DD2F000F4567D /* SceneDelegate.swift in Sources */,
-				A754962B242DD2F000F4567D /* ContentView.swift in Sources */,
+				A7FF43CA2437141A00A5D7DC /* DetailedCovid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +446,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Covid19/Preview Content\"";
 				DEVELOPMENT_TEAM = CD723HT6S4;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MongoSwift/MongoSwift.framework/Headers\"",
+					"\"$(SOURCE_ROOT)/Pods/**\"/**",
+				);
 				INFOPLIST_FILE = Covid19/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +471,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Covid19/Preview Content\"";
 				DEVELOPMENT_TEAM = CD723HT6S4;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MongoSwift/MongoSwift.framework/Headers\"",
+					"\"$(SOURCE_ROOT)/Pods/**\"/**",
+				);
 				INFOPLIST_FILE = Covid19/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

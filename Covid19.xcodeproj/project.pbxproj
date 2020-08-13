@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7153247244CCA60001CF45F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7153246244CCA60001CF45F /* ExternalAccessory.framework */; };
+		A715324A244CD8F7001CF45F /* TVShow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7153248244CD8F7001CF45F /* TVShow.xcdatamodeld */; };
 		A7549627242DD2F000F4567D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7549626242DD2F000F4567D /* AppDelegate.swift */; };
 		A7549629242DD2F000F4567D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7549628242DD2F000F4567D /* SceneDelegate.swift */; };
 		A754962D242DD2F400F4567D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A754962C242DD2F400F4567D /* Assets.xcassets */; };
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7153244244CCA40001CF45F /* Covid19.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Covid19.entitlements; sourceTree = "<group>"; };
+		A7153246244CCA60001CF45F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A7153249244CD8F7001CF45F /* TVShow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TVShow.xcdatamodel; sourceTree = "<group>"; };
 		A7549623242DD2F000F4567D /* Covid19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7549626242DD2F000F4567D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7549628242DD2F000F4567D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7153247244CCA60001CF45F /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +96,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7153245244CCA60001CF45F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7153246244CCA60001CF45F /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A754961A242DD2EF00F4567D = {
 			isa = PBXGroup;
 			children = (
+				A7153248244CD8F7001CF45F /* TVShow.xcdatamodeld */,
 				A7549625242DD2F000F4567D /* Covid19 */,
 				A754963C242DD2F400F4567D /* Covid19Tests */,
 				A7549624242DD2F000F4567D /* Products */,
+				A7153245244CCA60001CF45F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +127,7 @@
 		A7549625242DD2F000F4567D /* Covid19 */ = {
 			isa = PBXGroup;
 			children = (
+				A7153244244CCA40001CF45F /* Covid19.entitlements */,
 				A754964D242F67A500F4567D /* Resources */,
 				A7549648242E770D00F4567D /* Models */,
 				A7549626242DD2F000F4567D /* AppDelegate.swift */,
@@ -290,6 +307,7 @@
 				A77977C32435D400001E5486 /* CountryList.swift in Sources */,
 				A77977C12435CD9E001E5486 /* CountryRow.swift in Sources */,
 				A7549629242DD2F000F4567D /* SceneDelegate.swift in Sources */,
+				A715324A244CD8F7001CF45F /* TVShow.xcdatamodeld in Sources */,
 				A7FF43CA2437141A00A5D7DC /* DetailedCovid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Covid19/Covid19.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Covid19/Preview Content\"";
 				DEVELOPMENT_TEAM = CD723HT6S4;
@@ -467,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Covid19/Covid19.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Covid19/Preview Content\"";
 				DEVELOPMENT_TEAM = CD723HT6S4;
@@ -563,6 +583,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7153248244CD8F7001CF45F /* TVShow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7153249244CD8F7001CF45F /* TVShow.xcdatamodel */,
+			);
+			currentVersion = A7153249244CD8F7001CF45F /* TVShow.xcdatamodel */;
+			path = TVShow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A754961B242DD2EF00F4567D /* Project object */;
 }
